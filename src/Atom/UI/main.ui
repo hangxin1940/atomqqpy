@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>280</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1" rowspan="2">
+       <widget class="QLabel" name="imgUserFace">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/classic/img/header.bmp</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="lbUserName">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" colspan="3">
+       <widget class="QLabel" name="lbUserNick">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>1</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="4">
+       <widget class="QComboBox" name="cbxStatus">
+        <item>
+         <property name="text">
+          <string>Q我吧</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>在线</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>忙碌</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>隐身</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>离线</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tbMain">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <widget class="QWidget" name="tbFriends">
+       <attribute name="title">
+        <string>好友列表</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTreeView" name="twFriends">
+          <property name="autoScroll">
+           <bool>true</bool>
+          </property>
+          <property name="autoScrollMargin">
+           <number>1</number>
+          </property>
+          <property name="autoExpandDelay">
+           <number>0</number>
+          </property>
+          <property name="indentation">
+           <number>12</number>
+          </property>
+          <property name="animated">
+           <bool>true</bool>
+          </property>
+          <property name="expandsOnDoubleClick">
+           <bool>true</bool>
+          </property>
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tbQun">
+       <attribute name="title">
+        <string>群列表</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTreeView" name="twQun">
+          <property name="autoScroll">
+           <bool>true</bool>
+          </property>
+          <property name="autoScrollMargin">
+           <number>1</number>
+          </property>
+          <property name="autoExpandDelay">
+           <number>0</number>
+          </property>
+          <property name="indentation">
+           <number>12</number>
+          </property>
+          <property name="animated">
+           <bool>true</bool>
+          </property>
+          <property name="expandsOnDoubleClick">
+           <bool>true</bool>
+          </property>
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tbLishi">
+       <attribute name="title">
+        <string>近期会话</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTreeView" name="twRecent">
+          <property name="autoScroll">
+           <bool>true</bool>
+          </property>
+          <property name="autoScrollMargin">
+           <number>1</number>
+          </property>
+          <property name="autoExpandDelay">
+           <number>0</number>
+          </property>
+          <property name="indentation">
+           <number>12</number>
+          </property>
+          <property name="animated">
+           <bool>true</bool>
+          </property>
+          <property name="expandsOnDoubleClick">
+           <bool>true</bool>
+          </property>
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Res/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

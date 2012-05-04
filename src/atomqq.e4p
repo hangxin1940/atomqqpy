@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.6.dtd">
+<!-- eric4 project file for project atomqq -->
+<!-- Saved: 2012-05-03, 00:47:20 -->
+<!-- Copyright (C) 2012 darkcount, hangxin1940@gmail.com -->
+<Project version="4.6">
+  <Language></Language>
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Qt4</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author>darkcount</Author>
+  <Email>hangxin1940@gmail.com</Email>
+  <Sources>
+    <Source>__init__.py</Source>
+    <Source>Tencent/__init__.py</Source>
+    <Source>Tencent/WebQQ/__init__.py</Source>
+    <Source>Atom/__init__.py</Source>
+    <Source>Atom/loginwindow.py</Source>
+    <Source>Atom/UI/__init__.py</Source>
+    <Source>Atom/UI/Ui_login.py</Source>
+    <Source>Tencent/WebQQ/webqq3config.py</Source>
+    <Source>Tencent/WebQQ/protocol.py</Source>
+    <Source>main.py</Source>
+    <Source>Res/__init__.py</Source>
+    <Source>Res/res_rc.py</Source>
+    <Source>Atom/UI/Ui_main.py</Source>
+  </Sources>
+  <Forms>
+    <Form>Atom/UI/login.ui</Form>
+    <Form>Atom/UI/main.ui</Form>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+    <Resource>Res/res.qrc</Resource>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES" />
+  </FiletypeAssociations>
+</Project>

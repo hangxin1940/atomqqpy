@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="classic">
+    <file>img/header.bmp</file>
+  </qresource>
+</RCC>
